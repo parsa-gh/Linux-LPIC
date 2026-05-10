@@ -1,1 +1,15 @@
 ------------------------- LPIC1 - 101 --------------------------
+
+Linux is the name of kernel which linus torvals made beside UNIX
+
+GPL(Generic Public License) : to protect stealing the idea of programs GPL have been made. GPL have 2 conditions : 1. You're able to share a program with GPL with every possible way 2. you can modify the source and redistribute it !! BUT !! 1. it MUST KEEP being GPL 2. source code should be open.
+Linux kernel participants GPL too.
+
+some distros : Redhat / Debian / Slackware
+
+Enterprise Linux : a distro / fork of a distro which is supported by a strong company or team who updates that continouesly.
+
+CentOS : a clone from RHEL(REDHAT ENTERPRISE LINUX)=> it's been made for people who do not need support or do not wanna pay any licence to redhat
+
+shell : a connector between user & kernel => CLI shells, GUI shells
+
