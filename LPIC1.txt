@@ -13,3 +13,20 @@ CentOS : a clone from RHEL(REDHAT ENTERPRISE LINUX)=> it's been made for people 
 
 shell : a connector between user & kernel => CLI shells, GUI shells
 
+Filesystem : a part of linux kernel -- any partition we make has some binary codes which is hard to read for humans, also files contain metadata, so we cannot easily find out which piece of binary codes are for metadata, origin file, etc -- file system does that for us
+some common FSs : NTFS, FAT, [X]EXT, [X]ReiserFS, [X]XFS, [X]JFS, VMFS, [X]BtrFS(Read butterFS), etc. -- FSs that can be host of linux are marked with [X].
+
+EXT(Extended File System) : Got 4 versions till middle of 2026 - EXT4: default file system for linux -- compatible with SSD 
+Benefits :
+- 1. Supports all characters for file names except NULL, and '/'
+- 2. EXT3 is convertable to EXT4
+- 3. Advanced options like : 1. delayed allocation - 2.directory indexing - 3.extend & defragmentation
+- 4. infinite sub-directories
+- 5. nanosecond timestamp (EXT1) had some problem with timestamps.
+- 6. Predefined for extended files
+- 7. Multiple block allocation
+--
+Disadvantages :
+- 1. Data security is NOT supported (CIA)
+- 2. Complicated snapshots on different volumes
+- 3. More disk space is needed.
