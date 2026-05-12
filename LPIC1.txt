@@ -30,3 +30,20 @@ Disadvantages :
 - 1. Data security is NOT supported (CIA)
 - 2. Complicated snapshots on different volumes
 - 3. More disk space is needed.
+
+
+swap : cloning some process which are on logical memory to a new partition/file and uses free space that just cloned, and processes that dumped(cloned) to a partition, will be inactive till we need it again so we swap it into logical memory
+virtual memory = RAM + Swap 
+!! BUT !! swap space is not acting as memory, its job is to only make some free space to new processes so they could be run
+
+
+/dev/ : directory that linux recognize hardware files (Disk)
+/dev/sda ==> for sata/scsi disks linux name them "sd" and per each, uses alphabet => 2 scsi disks: /dev/sda && /dev/sdb --- partitions on each disk will be count with numbers => 1 scsi disk with 3 partition : /dev/sda /dev/sda2 /dev/sda3
+
+Bash shell : default shell on most linux kernels -- 
+
+user@pc:~[$/#] : if $ == you are normal user and no root privilages, if # == then user is superuser(root) -- 
+
+Internal commands : like cd, pwd, echo, etc. => they're compiled into bash by default
+External commands : for external commands a program must be written, compiled and introduced to bash, then bash recognizes it and we can use it ( path ) -- to see which directories bash checks for this, execute [ echo $PATH ]
+printenv command : list of external commands that are available in memory at the moment
