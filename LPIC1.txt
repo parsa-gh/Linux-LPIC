@@ -47,3 +47,24 @@ user@pc:~[$/#] : if $ == you are normal user and no root privilages, if # == the
 Internal commands : like cd, pwd, echo, etc. => they're compiled into bash by default
 External commands : for external commands a program must be written, compiled and introduced to bash, then bash recognizes it and we can use it ( path ) -- to see which directories bash checks for this, execute [ echo $PATH ]
 printenv command : list of external commands that are available in memory at the moment
+
+Meta characters : 
+; ==> seperates commands from each other 
+Ex) date ; date  / will be executed twice
+&& : command seperator BUT if status code of first command is zero(which means OK in linux) then second commmand is executed
+Ex) cal && cal
+|| : executes second command if status code of first command is anything but zero (which means UNSUCCESSFUL in linux)
+\ : usable for other meta chars when needed to use them in Cli, for example executing ; will not work out until we use this trick : \; , it says to bash that next char is not going to execute as a command
+whenever we execute a command, bash will take that and execute it with a process. process can show a msg (STDOUT) anytime it wants. by default it shows that msg on screen, but with a special char called " greater than (>)" it understands that ought to send msg to a file.
+Ex) date > out.txt
+Ex) ping 127.0.0.1 -c3 > out.txt
+
+STDIN(standard input): if a program needa argumans or what so ever, bash will connect your keyboard directly to that process
+giving input data from a file with (<)
+ ----------- Done Bash Shell ---------------
+which comnmand : to find out where a program is setteled.
+head command : by default shows 10 first lines of a file.
+tail command : by default shows 10 last lins of a file
+ 
+inode : identity of any file in linux is defined by inode, it can be seen with ls -li -- includes metadata and data
+stat command : see some infos with stat command
