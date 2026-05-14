@@ -68,3 +68,10 @@ tail command : by default shows 10 last lins of a file
  
 inode : identity of any file in linux is defined by inode, it can be seen with ls -li -- includes metadata and data
 stat command : see some infos with stat command
+
+
+expansion : ?, *, {}, [] --- expansion is handeled by bash 
+find command : case sensitive -- or use -i switch to disable it 
+MBR(Master Boot Record)-(msdos) partitioning : windows partitioning is with that -- disks with less than 2TB storage can be done with this-- and only 4 primary partitions --OR-- 3 pri+1extended -- fdisk is its Cli tool
+GPT(GUID Partition Table) -- gdisk is the CLI tool
+LVM: for linux only -- all problems with GPT & MBR is solved. snapshot is also possible. -- Gparted is the GUI tool -- parted is CLI 
