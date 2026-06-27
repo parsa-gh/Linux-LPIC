@@ -75,3 +75,17 @@ find command : case sensitive -- or use -i switch to disable it
 MBR(Master Boot Record)-(msdos) partitioning : windows partitioning is with that -- disks with less than 2TB storage can be done with this-- and only 4 primary partitions --OR-- 3 pri+1extended -- fdisk is its Cli tool
 GPT(GUID Partition Table) -- gdisk is the CLI tool
 LVM: for linux only -- all problems with GPT & MBR is solved. snapshot is also possible. -- Gparted is the GUI tool -- parted is CLI 
+
+-----------------------
+
+Reading its book. 050406 
+
+-----------------------
+
+
+touch command : its primary job is to create empty files on fly
+
+file command : to find out what type of file is a file. like directory, text ASCII file, etc.
+
+rm command cannot remove a directory which contains sth. it should be empty UNLESS using -rf switchs.
+
