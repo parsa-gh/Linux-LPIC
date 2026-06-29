@@ -89,3 +89,18 @@ file command : to find out what type of file is a file. like directory, text ASC
 
 rm command cannot remove a directory which contains sth. it should be empty UNLESS using -rf switchs.
 
+Folder Description
+/ The root filesystem
+/boot Contains bootloader files used to boot the system
+/dev Holds device files
+/home Contains user data files
+/lib Holds shared libraries and kernel modules
+/media Traditionally used as a mount point for removable devices
+/mnt Used as the current mount point for removable devices
+/opt Contains data for optional third-party programs
+/tmp Contains temporary files created by system users
+/usr Contains data for standard Linux programs
+/usr/bin Contains local user programs and data
+/usr/lib Holds libraries for programming and software packages
+/usr/local Contains data for programs unique to the local installation
+/usr/sbin Contains data for system programs and data
